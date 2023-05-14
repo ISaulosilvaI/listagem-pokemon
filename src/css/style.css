@@ -1,0 +1,237 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url(../imagens/eevee1.jpg) no-repeat top center ;
+    color: #333;
+    background-size: cover;
+    
+}
+
+
+
+body.modo-escuro{
+    background: url(../imagens/img-fundo-noite.jpeg) no-repeat top center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo, 
+header .imagem-botao{
+    width: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+header .eevee-logo{
+    width: 200px;
+}
+
+header #botao-alterar-tema{
+    display: flex;
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon{
+    background-color: #a8a8a8;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover{
+    background-color: #96d9d6;
+}
+
+.modo-escuro .tipo{
+   border: 2px solid #fff;
+}
+
+main .cartao-pokemon .informacoes{
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid #333;
+   border-radius: 10px; 
+}
+
+main .cartao-pokemon .informacoes span{
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .lea span{
+    color: #000;
+    font-weight: 800;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+    
+
+main .cartao-pokemon .gif{
+    width: 80px;
+    height: 80px;
+}
+
+main .cartao-pokemon .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.normal{
+    background-color: #a4acaf;
+}
+
+.agua{
+    background-color: #6390f0;
+}
+
+.eletrico{
+    background-color: #eed535;
+}
+
+.fogo{
+    background-color: #ee8130;
+}
+
+.psíquico{
+    background-color: #f366b9;
+}
+
+.escuro{
+    background-color: #707070;
+}
+
+.grama{
+    background-color: #7ac74c;
+}
+
+.gelo{
+    background-color: #51c4e7;
+}
+
+.fada{
+    background-color: #fdb9e9;
+}
+
+main .descricao{
+    font-weight: 800;
+    color: #000000;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+main .eve{
+    font-weight: 500;
+    color: #ffffff;
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.eevee{
+    background-image: url(../imagens/eeveelution/Eeveeboll.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #a4acaf;
+}
+
+.vaporeon{
+    background-image: url(../imagens/eeveelution/Vaoureonboll.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #6390f0;
+}
+
+.jolteon{
+    background-image: url(../imagens/eeveelution/Jonteonboll.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #eed535;
+}
+
+.flareon{
+    background-image: url(../imagens/eeveelution/Flareonboll.png);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #ee8130;
+}
+
+.espeon{
+    background-image: url(../imagens/eeveelution/Espeonboll.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #f366b9;
+}
+
+.umbreon{
+    background-image: url(../imagens/eeveelution/Umbreonboll.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #707070;
+}
+
+.leafeon{
+    background-image: url(../imagens/eeveelution/Leafeonboll.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 4px solid #7ac74c;
+}
+
+.glaceon{
+    background-image: url(../imagens/eeveelution/Glaceonboll.jpeg);
+    background-position: top;
+    background-size: cover;
+    border: 4px solid #51c4e7;
+}
+
+.sylveon{
+    background-image: url(../imagens/eeveelution/Sylveonboll.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border: 4px solid #fdb9e9;
+}
